@@ -16,7 +16,7 @@ const home = require('./route/home')
 const admin = require('./route/admin')
 
 app.use('/home',home)
-//服务器端存储的css 文件是相对浏览器的, 不是当前的文件
+//服务器端存储的css 文件是相对浏览器的, 不是当前的文件, 所以要在模板引用文件中的路径 用绝对路径 /admin/ 和 /home/
 app.use('/admin',admin)
 
 app.listen(8081)

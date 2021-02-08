@@ -5,4 +5,9 @@ const admin = express.Router()
 admin.get('/login',(req,res) =>{
     res.render('admin/login')
 })
+
+//创建用户路由
+admin.get('/user',(req,res)=>{
+  res.render('admin/user')
+})
 module.exports =admin
