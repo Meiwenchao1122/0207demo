@@ -1,8 +1,8 @@
 const express = require('express')
 
-const home = express.Router()
+const admin = express.Router()
 
-home.get('/',(req,res) =>{
-  res.send('欢迎来到 后台管理')
+admin.get('/login',(req,res) =>{
+    res.render('admin/login')
 })
-module.exports = home
+module.exports =admin
